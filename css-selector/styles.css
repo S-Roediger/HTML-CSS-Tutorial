@@ -1,0 +1,107 @@
+/*.synopsis { */
+
+.page > p:first-of-type { /* This is a child selector, it will only select the first p element of the .page class div */
+  color: #7E8184; /* Light grey */
+  font-style: italic;
+}
+
+.synopsis em {
+  font-style: normal;
+}
+
+.button:link,
+.button:visited {
+
+  display: block; /* This is needed since the buttons are a elements in HTML and therefore would otherwise behave as inline elements instead of block */
+  text-decoration: none;
+
+  color: #FFF;
+  background-color: #5995DA; /* Blue */
+  font-weight: bold;
+  padding: 20px;
+  text-align: center;
+  border: 2px solid #5D6063; /* Dark gray */
+  border-radius: 5px;
+
+  width: 200px;
+  margin: 20px auto;
+}
+
+.button:hover,
+.button:visited:hover {
+  color: #FFF;
+  background-color: #76AEED; /* Light blue */
+}
+
+.button:active,
+.button:active:visited {
+  color: #FFF;
+  background-color: #5995DA; /* Blue */
+}
+
+.page {
+  width: 600px;
+  margin: 0 auto; /* Margin auto aligns based on width */
+}
+
+
+.call-to-action {
+  font-style: italic;
+  background-color: #EEB75A; /* Yellow */
+}
+
+a:link { /* Link means just generally when no button was pressed before etc */
+  color: blue;
+  text-decoration: none;
+}
+
+a:visited {
+  color: purple;
+}
+
+a:hover {
+  color: aqua;
+  text-decoration: underline;
+}
+
+a:active { /* active means pressing the button */
+  color: red;
+}
+
+a:visited:hover {
+  color: orange;
+}
+
+a:visited:active {
+  color: red;
+}
+
+#button-2 {
+  background-color: #D55C5F; /* Red */
+}
+
+.call-to-action:link,
+.call-to-action:visited {
+  font-style: italic;
+  background-color: #EEB75A;
+}
+
+.call-to-action:hover,
+.call-to-action:visited:hover { /* This means that hover style is applied to both visited and not visited buttons */
+  background-color: #F5CF8E; /* Light Yellow */
+}
+
+.call-to-action:active,
+.call-to-action:visited:active {
+  background-color: #EEB75A; /* Yellow */
+}
+
+
+
+p:last-of-type {
+  margin-bottom: 50px;
+}
+
+#button-2 { /* This is not a good idea, better use classes */
+  color: #5D6063; /* Dark gray */
+}

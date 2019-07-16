@@ -1,0 +1,105 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.menu-container {
+  color: #fff;
+  background-color: #5995DA; /* Blue */
+  padding: 20px 0;
+  display: flex;
+  justify-content: center; /* horizontal alignment */
+}
+
+.menu {
+  /*border: 1px solid #fff; /* For debugging */
+  width: 900px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.links { /* replaced by auto margin in signup */
+  display: flex;
+  justify-content: flex-end;
+  /*border: 1px solid #fff; /* for debugging */
+}
+
+.login {
+  margin-left: 20px;
+}
+
+.header-container {
+  color: #5995DA;
+  background-color: #D6E9FE;
+  display: flex;
+  justify-content: center;
+  /*border: 1px solid red; */
+}
+
+.header {
+  /*border: 1px solid red; */
+  width: 900px;
+  height: 300px;
+  display: flex;
+  justify-content: space-between; /* horizontal alignment */
+  align-items: center; /* vertical alignment */
+}
+
+.photo-grid-container {
+  display: flex;
+  justify-content: center;
+}
+
+.photo-grid {
+  width: 900px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex-direction: row; /* When you change the flex direction, also the justify-content and align-items values flip */
+}
+
+.photo-grid-item {
+  width: 300px;
+  height: 300px;
+  border: 1px solid red;
+}
+
+.first-item {
+  order: 1;
+}
+
+.last-item {
+  order: -1;
+}
+
+.subscribe,
+.social {
+  display: flex;
+  align-self: flex-end; /* overrides the align-item value in parent container */
+  margin-bottom: 20px;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-item {
+  border: 1px solid #fff;
+  background-color: #D6E9FE;
+  height: 200px;
+  flex: 1;
+}
+
+.footer-one,
+.footer-three {
+  background-color: #5995DA;
+  flex: initial;
+  width: 300px;
+}
+
+.signup {
+  margin-left: auto; /* This seperates the signup & login from date */
+}
